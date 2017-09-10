@@ -29,3 +29,5 @@ IO.puts fizzbuzz.(1, 0, 3)
 fb = fn n -> fizzbuzz.(rem(n, 3), rem(n, 5), n) end
 
 IO.inspect Enum.map(10..16, fb)
+
+
