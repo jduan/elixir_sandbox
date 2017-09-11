@@ -54,6 +54,11 @@ defmodule MyList do
       new_char
     end
   end
+
+  def span(from, from), do: [from]
+  def span(from, to) when from < to do
+    [from | span(from + 1, to)]
+  end
 end
 
 lst = [1, 2, 3, 4]
